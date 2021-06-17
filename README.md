@@ -11,7 +11,7 @@ This is the main flow to submit a single document to the Rossum platform for par
 ### Inputs
 - **i_Document-Path**: the path on the Cortex server of the file to be parsed.
 - **i_Reviewer-Email-Addresses**: a comma-separated list of email addresses to which an email is sent if the document requires manual review; the email will contain a direct link to the document on the Rossum platform
-- **io_log_handler** (optional) a structure used by the [CTX_Logging](https://github.com/CortexIntelligentAutomation/CTX-Logging) module; if not provided a new process log will be started
+- **io_log_handler** (optional) a structure used by the [CTX_Logging](https://github.com/CortexIntelligentAutomation/CTX-Logging) module. If provided, logs will be appended to the structure, but not committed; if not provided a new process log will be started and logs will be committed.
 - **io_log_reference** (optional) a text reference used by the [CTX_Logging](https://github.com/CortexIntelligentAutomation/CTX-Logging) module; if not provided the flow UUID will be provided
 
 ### Outputs
